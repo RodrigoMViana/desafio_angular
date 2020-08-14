@@ -36,6 +36,7 @@ Temos uma API que importa dados de um arquivo CSV e os salva num banco de dados.
 
 - Não será mais necessário importar os dados do arquivo CSV. Os dados já estão salvos no banco de dados da aplicação;
 - A URL base da aplicação é: https://combustivelapp.herokuapp.com (não há nada mapeado na raiz);
+- Caso a aplicação esteja hibernada, ela vai demorar um pouco pra responder, mas é só aguardar alguns segundos;
 - A documentação da API está disponível em https://combustivelapp.herokuapp.com/swagger-ui.html, nela contém os endpoints necessários para resolução desse teste, consulte e indentifique a melhor forma de fazer as requisições;
 - Fica ao seu critério como construir a sua UI, mas estaremos atentos ao design criado e estilos também;
 - Reforçamos que você invista em uma UI limpa, fluída e bonita. Você pode utilizar algum pré-processador para te auxiliar nisso;
