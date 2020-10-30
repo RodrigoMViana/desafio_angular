@@ -1,0 +1,52 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<header>
+    <div class="list-group">
+            <a routerLink="../" class="list-group-item list-group-item-action active">
+            Pesquisa de Combustível
+            </a>
+        </div>        
+</header>  
+<body>
+    <table *ngIf="responseData">
+        <thead class=".poscentralized">
+            <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Sigla Região</th>
+            <th scope="col">Sigla Estado</th>
+            <th scope="col">Municipio</th>
+            <th scope="col">Rvendedora</th>
+            <th scope="col">Código de Instalação</th>
+            <th scope="col">Produto</th>
+            <th scope="col">Data da Coleta</th>
+            <th scope="col">Valor de compra</th>
+            <th scope="col">Valor de Venda</th>
+            <th scope="col">Unidade Medida</th>
+            <th scope="col">Bandeira</th>
+            </tr>
+        </thead>
+    
+    <tbody>
+            
+            <tr *ngFor="let user of responseData">
+            <th scope="row" text-align="center">{{user.id}}</th>
+            <td>{{user.siglaRegiao}}</td>
+            <td>{{user.siglaEstado}}</td>
+            <td>{{user.municipio}}</td>
+            <td>{{user.revendedora}</td>
+            <td>{{user.codInstalacao}}</td>
+            <td>{{user.produto}</td>
+            <td>{{user.dataColeta}</td>
+            <td>{{user.valorCompra}</td>
+            <td>{{user.valorVenda}}</td>
+            <td>{{user.unidadeMedida}}</td>
+            <td>{{user.bandeira}</td>
+            </tr>
+    </tbody>
+    </table>
+
+</body>
+

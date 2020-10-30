@@ -1,0 +1,45 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<form class="form-horizontal">
+    <fieldset>
+        <div class="panel panel-primary" background-color= "#96cbec" >
+            <div class="panel-heading" >
+                Lista de Usuários
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+
+<body>
+<table *ngIf="responseUsers">
+    <thead class=".poscentralized">
+    <tr>
+    <th scope="col">Admin</th>
+    <th scope="col">Email</th>
+    <th scope="col">Id</th>
+    <th scope="col">Login</th>
+    <th scope="col">Nome</th>
+    <th scope="col"></th>
+    <th scope="col"></th>
+    </tr>
+    </thead>
+
+<tbody>
+        
+        <tr *ngFor="let user of responseUsers">
+        <th scope="row" text-align="center">{{user.admin}}</th>
+        <td>{{user.email}}</td>
+        <td>{{user.id}}</td>
+        <td>{{user.login}}</td>
+        <td>{{user.nome}}</td>
+        <td><a routerLink="/users/update/{{user.id}}"> Editar</a></td>
+        <td><a routerLink="/users/delete/{{user.id}}"> Remover</a></td>
+        </tr>
+</tbody>
+</table>
+</body>
+

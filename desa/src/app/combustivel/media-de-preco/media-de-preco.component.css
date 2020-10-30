@@ -1,0 +1,34 @@
+body {
+    margin-top: 0px;
+}
+
+header {
+    font-size: 150%;
+}
+
+table{
+    
+    width: 100%;
+    background-color: #96cbec; 
+}
+
+
+
+tbody {
+    background-color: #c3e2f5; 
+}
+
+#logo {
+    width:50%;
+    height:50%;
+}
+
+.panel-heading{
+    font-size:150%;
+}
+
+thead {
+    margin-left: auto;
+    margin-right: auto;
+}
+
