@@ -5,49 +5,49 @@
 
 <!DOCTYPE html>
 
-<body>
 
 
+<div class="container-fluid">
 <form class="form-horizontal">
 <fieldset>
     <div class="panel panel-primary" >
-    <div class="panel-heading" ><strong>Deseja remover este usuário?</strong></div>
-        <div class="panel-body">
-            
-            <div class="form-group" >
-                <label class="col-md-2 control-label" for="email">Email: <strong>{{request.email}}</strong> </label>
+    <div class="panel-heading" >Deseja remover este usuário?</div>
+        <div class="panel-body">  
+        <div class="alinhamento">   
+            <div class="form-group" style="align-content: center" >
+                <label class="col-md-2 col-md-offset-5 control-label" for="email" style="text-align:center">E-mail: <strong>{{request.email}}</strong> </label>
             </div>
 
             <div class="form-group">
-                <label class="col-md-2 control-label" for="login" >Login: <strong>{{request.login}}</strong> </label>  
+                <label class="col-md-2 col-md-offset-5 control-label" for="login" style="text-align:center">Login: <strong>{{request.login}}</strong> </label>  
             </div> 
             
             <div class="form-group">
-                <label class="col-md-2 control-label" for="Nome" >Nome: <strong> {{request.nome}} </strong></label>  
+                <label class="col-md-2 col-md-offset-5 control-label" for="Nome" style="text-align:center">Nome: <strong> {{request.nome}} </strong></label>  
             </div>
 
             <div class="form-group">
-                <label class="col-md-2 control-label" for="Admin">Admin: <strong>{{request.admin}} </strong></label>  
+                <label class="col-md-2 col-md-offset-5 control-label" for="Admin" style="text-align:center">Admin: <strong>{{request.admin}} </strong></label>  
             </div> 
             
             <div class="form-group">
-                <label class="col-md-2 control-label" for="id">Id: <strong>{{request.id}} </strong></label>  
+                <label class="col-md-2 col-md-offset-5 control-label" for="id" style="text-align:center">Id: <strong>{{request.id}} </strong></label>  
             </div> 
-
-
+        </div>
+        <br><br>
 
             <!-- Button (Double) -->
             <div class="form-group">
                 <label class="col-md-2 control-label" for="Cadastrar"></label>
                     <div class="col-md-8">
-                        <button id="Cadastrar" name="Cadastrar" type="Submit" (click)="delete()">Confirmar</button> &nbsp; 
-                        <button id="Cadastrar" name="Cadastrar" type="Submit" (click)="cancel()">Cancelar</button>
+                        <button class="btn btn-primary btn-lg" id="Cadastrar" name="Cadastrar" type="Submit" (click)="delete()">Confirmar</button> &nbsp; 
+                        <button class="btn btn-primary btn-lg" id="Cadastrar" name="Cadastrar" type="Submit" (click)="cancel()">Cancelar</button>
                     </div>
             </div>
         </div>
 </div>
 </fieldset>
 </form>
+</div>
 
-</body>
 

@@ -26,10 +26,9 @@ export class UpdateComponent implements OnInit {
       this.userService.updateUser(this.id).subscribe(res => {
         });
         alert('Atualizado com Sucesso')
+        this._route.navigate(['/users']);     
+      }
+      cancel1() {
         this._route.navigate(['/users']);
-
-      
-      
-
-}
+      }
 }

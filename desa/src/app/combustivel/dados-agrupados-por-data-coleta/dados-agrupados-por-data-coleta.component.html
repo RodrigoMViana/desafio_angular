@@ -19,7 +19,7 @@
             <th scope="col">Sigla Região</th>
             <th scope="col">Sigla Estado</th>
             <th scope="col">Municipio</th>
-            <th scope="col">Rvendedora</th>
+            <th scope="col">Revendedora</th>
             <th scope="col">Código de Instalação</th>
             <th scope="col">Produto</th>
             <th scope="col">Data da Coleta</th>
@@ -37,14 +37,14 @@
             <td>{{user.siglaRegiao}}</td>
             <td>{{user.siglaEstado}}</td>
             <td>{{user.municipio}}</td>
-            <td>{{user.revendedora}</td>
+            <td>{{user.revendedora}}</td>
             <td>{{user.codInstalacao}}</td>
-            <td>{{user.produto}</td>
-            <td>{{user.dataColeta}</td>
-            <td>{{user.valorCompra}</td>
+            <td>{{user.produto}}</td>
+            <td>{{user.dataColeta | date:'dd/MM/yyyy'}}</td>
+            <td>{{user.valorCompra}}</td>
             <td>{{user.valorVenda}}</td>
             <td>{{user.unidadeMedida}}</td>
-            <td>{{user.bandeira}</td>
+            <td>{{user.bandeira}}</td>
             </tr>
     </tbody>
     </table>

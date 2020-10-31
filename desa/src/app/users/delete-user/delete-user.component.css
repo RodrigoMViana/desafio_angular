@@ -1,10 +1,13 @@
 body {
-    text-align: center;
+    font-size:150%;
     justify-content: center;
 }
 
 .panel-body{
-    background-color: #c3e2f5;  
+    background-color: #c3e2f5;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
     
 }
@@ -15,3 +18,11 @@ body {
     justify-content: center;
 }
 
+.panel-heading{
+    font-size:150%;
+    }
+
+.alinhamento {
+    align-content: center !important;
+
+}
