@@ -9,7 +9,7 @@ import { ResponsePreco } from './media-de-preco.model';
 export class MediaDePrecoService {
   [x: string]: any;
 
-  private url = "https://combustivelapp.herokuapp.com/api/combustivel/media-de-preco/<string>";
+  private url = "https://combustivelapp.herokuapp.com/api/combustivel/media-de-preco/{municipio}";
 
   constructor(private http: HttpClient) { }
 

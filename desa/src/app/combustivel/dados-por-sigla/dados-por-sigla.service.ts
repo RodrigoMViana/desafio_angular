@@ -9,7 +9,7 @@ import { ResponseSigla } from './dados-por-sigla.model';
 export class DadosPorSiglaService{
   [x: string]: any;
 
-  private url = "https://combustivelapp.herokuapp.com/api/combustivel/dados-por-sigla/<string>";
+  private url = "https://combustivelapp.herokuapp.com/api/combustivel/dados-por-sigla/{sigla}>";
 
   constructor(private http: HttpClient) { }
 

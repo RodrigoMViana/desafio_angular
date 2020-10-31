@@ -1,16 +1,17 @@
 body {
     text-align: center;
+    justify-content: center;
 }
 
 .panel-body{
     background-color: #c3e2f5;  
-    text-align: center;
-}
 
-.col-md-2 control-label {
     
 }
 
 .form-group {
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
+

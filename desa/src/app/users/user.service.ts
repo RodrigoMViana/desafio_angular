@@ -24,18 +24,18 @@ createUser(request: RequestCreate): Observable<ResponseCreate>{
 }
 
 getUser(id:string): Observable<ResponseUser> {
-  const _url = '${this.url}/${id}';
+  const _url = `${this.url}/${id}`;
   return this.http.get<ResponseUser>(_url)
 
 }
 
 updateUsers(id: string, request): Observable<ResponseUpdate> {
-  const _url = '${this.url}/${id}';
+  const _url = `${this.url}/${id}`;
   return this.http.put<ResponseCreate>(_url, request);
 }
 
 deleteUser(id: string): Observable<any> {
-  const _url = '${this.url}/${id}';
+  const _url = `${this.url}/${id}`;
   return this.http.delete<ResponseCreate>(_url);
 }
 
