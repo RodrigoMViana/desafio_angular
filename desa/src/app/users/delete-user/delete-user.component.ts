@@ -13,17 +13,17 @@ export class DeleteUserComponent implements OnInit {
   request: ResponseUser;
   constructor(private userService: UserService, private route: ActivatedRoute, private _route: Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
-        this.userService.getUser(this.id).subscribe(res => {
-        this.request =   res
-        });
-      }
+    this.userService.getUser(this.id).subscribe(res => {
+    this.request =   res
+    });
+    }
 
   delete() {
     this.userService.deleteUser(this.id).subscribe(res =>{
-        alert('Removido com Sucesso')
-        this._route.navigate(['/users']);
+    alert('Removido com Sucesso')
+    this._route.navigate(['/users']);
     
     })
   }
@@ -31,3 +31,5 @@ export class DeleteUserComponent implements OnInit {
     this._route.navigate(['/users']);
   }
 }
+
+

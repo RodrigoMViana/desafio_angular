@@ -35,6 +35,8 @@ export interface ResponseUsers {
   //modelos para o get user  
 
     export interface ResponseUser {
+        responseUser: ResponseUser;
+        request: ResponseUser;
         admin: boolean;
         email: string;
         id: number;

@@ -16,6 +16,7 @@ import { ValorMediaCompraVendaMunicipioComponent } from './combustivel/valor-med
 
 const routes: Routes = [
 
+{path: '', component: UsersComponent},  
 {path: 'users', component: UsersComponent},
 {path: 'users/create', component: CreateUserComponent},
 {path: 'users/update/:id', component: UpdateComponent},

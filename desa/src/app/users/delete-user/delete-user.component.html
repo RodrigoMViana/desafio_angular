@@ -12,27 +12,26 @@
 <fieldset>
     <div class="panel panel-primary" >
     <div class="panel-heading" ><strong>Deseja remover este usuário?</strong></div>
-    <table *ngIf="responseUser">    
         <div class="panel-body" ngFor="let user of responseUser">
             
-            <div class="form-group" text-align="center">
+            <div class="form-group" text-align="center" *ngFor="let user of responseeUser">
                 <label class="col-md-2 control-label" for="prependedtext">Email: <strong>{{user.email}}</strong> </label>
             </div>
 
             <div class="form-group">
-                <label class="col-md-2 control-label" for="vinculo">Login: <strong>{{user.login}}</strong> </label>  
+                <label class="col-md-2 control-label" for="vinculo" *ngFor="let user of responseeUser">Login: <strong>{{user.login}}</strong> </label>  
             </div> 
             
             <div class="form-group">
-                <label class="col-md-2 control-label" for="Nome">Nome: <strong> {{user.nome}} </strong></label>  
+                <label class="col-md-2 control-label" for="Nome" *ngFor="let user of responseeUser">Nome: <strong> {{user.nome}} </strong></label>  
             </div>
 
             <div class="form-group">
-                <label class="col-md-2 control-label" for="vinculo">Admin: <strong>{{user.admin}} </strong></label>  
+                <label class="col-md-2 control-label" for="vinculo" *ngFor="let user of responseeUser">Admin: <strong>{{user.admin}} </strong></label>  
             </div> 
             
             <div class="form-group">
-                <label class="col-md-2 control-label" for="vinculo">Id: <strong>{{user.id}} </strong></label>  
+                <label class="col-md-2 control-label" for="vinculo" *ngFor="let user of responseeUser">Id: <strong>{{user.id}} </strong></label>  
             </div> 
 
 
@@ -46,7 +45,6 @@
                     </div>
             </div>
         </div>
-    </table>    
 </div>
 </fieldset>
 </form>

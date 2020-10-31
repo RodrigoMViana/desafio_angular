@@ -24,7 +24,6 @@ import { ValorMediaCompraVendaMunicipioComponent } from './combustivel/valor-med
     UsersComponent,
     CreateUserComponent,
     UpdateComponent,
-    DeleteUserComponent,
     CombustivelComponent,
     DadosAgrupadosPorDataColetaComponent,
     DadosAgrupadosPorDistribuidoraComponent,
