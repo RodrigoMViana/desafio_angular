@@ -29,7 +29,7 @@ getUser(id:string): Observable<ResponseUser> {
 
 }
 
-updateUsers(id: string, request): Observable<ResponseUpdate> {
+updateUsers(id: string, request: RequestCreate): Observable<ResponseUpdate> {
   const _url = `${this.url}/${id}`;
   return this.http.put<ResponseCreate>(_url, request);
 }
